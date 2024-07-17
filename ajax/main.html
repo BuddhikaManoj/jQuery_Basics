@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <title>Main html doc</title>
+</head>
+<body>
+    <div>
+        <h2>Buddhika Manoj</h2>
+        <img src="./profile.jpg">
+
+        <button id="more">More Details</button>
+        <div id="more_details"></div>
+    </div>
+
+    <script>
+        $(document).ready( function() {
+            $("#more").click(function () {
+                $.ajax('more_info.html', {
+                    success: function(result) {
+                        $("#more_details").append(result);
+                        $("#more").hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
