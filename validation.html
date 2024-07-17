@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="./validation.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="" name="registration" style="display: flex; flex-direction: column;">
+
+            <lebel for="firstName">First Name</lebel>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+
+            <lebel for="lastName">Last Name</lebel>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+
+            <lebel>Password</lebel>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+
+            <lebel>Confirm Password</lebel>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Re-enter your password">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>

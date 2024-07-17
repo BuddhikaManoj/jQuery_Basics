@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".btn1").click(function () {
+                $(".btn").fadeIn("slow");
+            });
+            $(".btn2").click(function () {
+                $(".btn").fadeOut("fast");
+            });
+            $(".btn3").click(function () {
+                $(".btn").fadeTo("slow",0.5);
+            });
+            $(".btn4").click(function () {
+                $(".btn").fadeToggle("slow");
+            });
+            $(".btn-1").click(function () {
+                $(".btn").slideDown("slow");
+            });
+            $(".btn-2").click(function () {
+                $(".btn").slideUp("fast");
+            });
+            $(".btn-3").click(function () {
+                $(".btn").slideToggle("slow");
+            });
+            $(".btn--1").click(function () {
+                $(".btn").hide("slow");
+            });
+            $(".btn--2").click(function () {
+                $(".btn").show("fast");
+            });
+            $(".btn--3").click(function () {
+                $(".btn").toggle("slow");
+            });
+    
+        });
+    </script>
+  </head>
+  <body>
+    <button class="btn1">Fade In</button>
+    <button class="btn2">Fade Out</button>
+    <button class="btn3">Fade To</button>
+    <button class="btn4">Fade Toggle</button>
+
+    <button class="btn-1">Slide Down</button>
+    <button class="btn-2">Slide Up</button>
+    <button class="btn-3">slide Toggle</button>
+
+    <button class="btn--1">Hide</button>
+    <button class="btn--2">Show</button>
+    <button class="btn--3">Toggle</button>
+
+    <div class="btn" style="background-color: #88a4a4; padding: 8px; color: #fff; margin: 5px 0px;">Fade In effect lies here</div>
+    <div class="btn" style="background-color: #88a4a4; padding: 8px; color: #fff; margin: 5px 0px;">Fade Out effect lies here</div>
+    <div class="btn" style="background-color: #88a4a4; padding: 8px; color: #fff; margin: 5px 0px;">Fade To effect lies here</div>
+  </body>
+</html>
